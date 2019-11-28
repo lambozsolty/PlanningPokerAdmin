@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentcreategroup"
+    tools:context=".CreateGroupFragment">
+
+    <Button
+        android:id="@+id/addgroup"
+        android:layout_width="269dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        android:onClick="addGroup"
+        android:text="Add Group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupname" />
+
+    <EditText
+        android:id="@+id/groupname"
+        android:layout_width="269dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="184dp"
+        android:ems="10"
+        android:hint="Group name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewgroups"
+        android:layout_width="269dp"
+        android:layout_height="78dp"
+        android:text="View Groups"
+        android:onClick="viewGroups"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addgroup"
+        app:layout_constraintVertical_bias="0.171" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
